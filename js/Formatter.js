@@ -34,8 +34,7 @@ function addCandidatesToTable(table, candidates) {
 }
 
 function filterCandidateBySkill(candidates, skill) {
-  const result = candidates.filter(({skills}) => skills.includes(skill))
-  return result
+  return candidates.filter(({skills}) => skills.includes(skill))
 }
 
 const candidatesTable = document.getElementById("candidates_example");

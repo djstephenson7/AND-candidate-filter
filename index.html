@@ -98,12 +98,15 @@
     }
 
     function filterCandidateBySkill(candidates, skill) {
-      candidates.map((element) => {
-        if (element.skills.includes('JavaScript')) {
-          console.log(element)
-          return element
-        }
-      })
+      const result = candidates.filter(({skills}) => skills.includes('JavaScript'))
+      console.log(result)
+      return result
+      // candidates.map((element) => {
+      //   if (element.skills.includes('JavaScript')) {
+      //     console.log(element)
+      //     return element
+      //   }
+      // })
       return candidates;
     }
 
